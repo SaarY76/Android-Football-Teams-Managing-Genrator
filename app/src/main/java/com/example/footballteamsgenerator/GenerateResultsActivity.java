@@ -165,39 +165,6 @@ public class GenerateResultsActivity extends AppCompatActivity
         } while (improved);
     }
 
-//    private void fillTeams ()
-//    {
-//        players = new ArrayList<>();
-//        List<Integer> indexes = new ArrayList<>();
-//        for (int i=0; i<MainActivity.allPlayers.size(); i++)
-//        {
-//            Random random = new Random();
-//            int index = random.nextInt(MainActivity.allPlayers.size());
-//            while (indexes.contains(index))
-//                index = random.nextInt(MainActivity.allPlayers.size());
-//            players.add(new Player(MainActivity.allPlayers.get(index).getName(),MainActivity.allPlayers.get(index).getRating()));
-//            indexes.add(index);
-//        }
-//
-//        // Sort players by rating
-//        Collections.sort(players, (p1, p2) -> p2.getRating() - p1.getRating());
-//
-//        teams = new ArrayList<>();
-//        List <Team> teamsTemp = new ArrayList<>();
-//        for (int i=0; i<numberOfTeams; i++)
-//            teams.add(new Team());
-//
-//        while (!players.isEmpty())
-//        {
-//            for (Team team : teams)
-//            {
-//                team.addPlayer(players.remove(0));
-//            }
-//        }
-//
-//        balanceTeams();
-//    }
-
     private void fillTeams ()
     {
         players = new ArrayList<>();
