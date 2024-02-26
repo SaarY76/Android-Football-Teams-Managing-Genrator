@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="10dp"
+    style="@style/SCREEN"
+    android:layout_marginBottom="0.5dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edit_text_border">
+
+        <CheckBox
+            android:id="@+id/checkBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"/>
+
+        <EditText
+            android:id="@+id/editTextPlayerName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:hint="Name"
+            android:inputType="text"
+            android:maxLength="20"
+            style="@style/TEXT"
+            android:background="@drawable/edit_text_border"
+            android:layout_marginRight="10dp"
+            android:textColorHint="#6E6E6E"/>
+
+        <Spinner
+            android:id="@+id/SpinnerPlayerRating"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="2"
+            android:dropDownWidth="match_parent"
+            android:dropDownHorizontalOffset="-8dp"
+            android:dropDownVerticalOffset="40dp"
+            android:gravity="center_vertical"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp"
+            android:spinnerMode="dropdown"
+            style="@style/SPINNER" />
+
+    </LinearLayout>
+</LinearLayout>
